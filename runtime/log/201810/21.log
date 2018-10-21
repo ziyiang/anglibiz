@@ -240,3 +240,216 @@
 [ sql ] [ SQL ] SELECT * FROM `fa_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.004047s ]
 [ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.395297s ]
 [ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540113463) [ RunTime:0.139313s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:31:24+08:00 ] 127.0.0.1 GET /admin/command?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005494s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.098940s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.075127s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003561s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'command' LIMIT 1 [ RunTime:0.002190s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:31:27+08:00 ] 127.0.0.1 GET /admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114285622
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004971s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.071646s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.006084s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.071263s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.004388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command` [ RunTime:0.063456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001796s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002197s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:31:27+08:00 ] 127.0.0.1 GET /admin/command/add?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020484s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.045678s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.007312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.061605s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003290s ]
+[ sql ] [ SQL ] SHOW TABLES [ RunTime:0.003548s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:31:30+08:00 ] 127.0.0.1 POST /admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007395s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'anglibiz' AND table_name = 'fa_admin' ORDER BY ORDINAL_POSITION [ RunTime:0.055772s ]
+[ sql ] [ SQL ] 'fa_admin'anglibiz'HOW COLUMNS FROM `fa_admin_log` [ RunTime:0.047882s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"fa_admin\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114290) [ RunTime:0.066880s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:31:34+08:00 ] 127.0.0.1 POST /admin/command/get_field_list
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005959s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'anglibiz' AND table_name = 'fa_procurement' ORDER BY ORDINAL_POSITION [ RunTime:0.045337s ]
+[ sql ] [ SQL ] 'fa_procurement'anglibiz'HOW COLUMNS FROM `fa_admin_log` [ RunTime:0.046560s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"table\":\"fa_procurement\"}' , '/admin/command/get_field_list' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114294) [ RunTime:0.061230s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:31+08:00 ] 127.0.0.1 POST /admin/command/command/action/command
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004878s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.046060s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.028114s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.041736s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.006408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.057562s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"commandtype\":\"crud\",\"isrelation\":\"0\",\"local\":\"1\",\"delete\":\"0\",\"force\":\"0\",\"table\":\"fa_procurement\",\"controller\":\"\",\"model\":\"\",\"setcheckboxsuffix\":\"\",\"enumradiosuffix\":\"\",\"imagefield\":\"\",\"filefield\":\"\",\"intdatesuffix\":\"purchase_date,delivery_date,create_time\",\"switchsuffix\":\"\",\"citysuffix\":\"\",\"selectpagesuffix\":\"\",\"selectpagessuffix\":\"\",\"ignorefields\":\"author_id,create_time\",\"sortfield\":\"\",\"editorsuffix\":\"\",\"headingfilterfield\":\"\",\"action\":\"command\"}' , '/admin/command/command/action/command' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114351) [ RunTime:0.058203s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:38+08:00 ] 127.0.0.1 POST /admin/command/command/action/execute
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005311s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.056352s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.044963s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003248s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command` [ RunTime:0.042143s ]
+[ sql ] [ SQL ] INSERT INTO `fa_command` (`type` , `params` , `command` , `executetime` , `createtime` , `updatetime`) VALUES ('crud' , '[\"--table=fa_procurement\",\"--intdatesuffix=purchase_date\",\"--intdatesuffix=delivery_date\",\"--intdatesuffix=create_time\",\"--ignorefields=author_id\",\"--ignorefields=create_time\"]' , 'php think crud --table=fa_procurement --intdatesuffix=purchase_date --intdatesuffix=delivery_date --intdatesuffix=create_time --ignorefields=author_id --ignorefields=create_time' , 1540114357 , 1540114357 , 1540114357) [ RunTime:0.063718s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'procurement' [ RunTime:0.003445s ]
+[ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'fa_procurement' [ RunTime:0.124902s ]
+[ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'anglibiz' AND table_name = 'fa_procurement' ORDER BY ORDINAL_POSITION [ RunTime:0.048057s ]
+[ sql ] [ SQL ] UPDATE `fa_command`  SET `status`='successed',`content`='Build Successed',`updatetime`=1540114358  WHERE  `id` = 1 [ RunTime:0.051031s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.046753s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"commandtype\":\"crud\",\"isrelation\":\"0\",\"local\":\"1\",\"delete\":\"0\",\"force\":\"0\",\"table\":\"fa_procurement\",\"controller\":\"\",\"model\":\"\",\"setcheckboxsuffix\":\"\",\"enumradiosuffix\":\"\",\"imagefield\":\"\",\"filefield\":\"\",\"intdatesuffix\":\"purchase_date,delivery_date,create_time\",\"switchsuffix\":\"\",\"citysuffix\":\"\",\"selectpagesuffix\":\"\",\"selectpagessuffix\":\"\",\"ignorefields\":\"author_id,create_time\",\"sortfield\":\"\",\"editorsuffix\":\"\",\"headingfilterfield\":\"\",\"action\":\"execute\"}' , '/admin/command/command/action/execute' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114358) [ RunTime:0.056899s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:39+08:00 ] 127.0.0.1 GET /admin/command/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114285623
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015738s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.056951s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.044801s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_command` [ RunTime:0.046588s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_command` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001726s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_command` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.003290s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:45+08:00 ] 127.0.0.1 POST /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018633s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.159155s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.009694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.085202s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.091162s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.053996s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114365) [ RunTime:0.064953s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:51+08:00 ] 127.0.0.1 GET /admin/procurement?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016942s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.051954s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.048586s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003568s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'procurement' LIMIT 1 [ RunTime:0.003949s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:32:53+08:00 ] 127.0.0.1 GET /admin/procurement/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114372320
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007734s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.047984s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002237s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.044685s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003068s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.049812s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_procurement` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.004491s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.014512s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:33:50+08:00 ] 127.0.0.1 POST /admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015777s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.043693s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 14772 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20181021/2e4bfcf20b4ec2628691d7fd735c2fb7.xlsx' , 1540114430 , 'local' , '2b2d884f4851c71e33118a637498b32668bf04a8' , 1540114430 , 1540114430) [ RunTime:0.056556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.086257s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u91c7\\u8d2d\\u660e\\u7ec6(2).xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114430) [ RunTime:0.054209s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:33:51+08:00 ] 127.0.0.1 POST /admin/procurement?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006210s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.058587s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.055670s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003821s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.085471s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_procurement` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.015242s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` ORDER BY `id` DESC [ RunTime:0.010787s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.048978s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"addtabs\":\"1\",\"file\":\"\\/uploads\\/20181021\\/2e4bfcf20b4ec2628691d7fd735c2fb7.xlsx\"}' , '/admin/procurement?addtabs=1' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114431) [ RunTime:0.056137s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:08+08:00 ] 127.0.0.1 GET /admin/procurement?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007011s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.056225s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.035829s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003268s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:12+08:00 ] 127.0.0.1 GET /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004995s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.046568s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002055s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.038811s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003615s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:14+08:00 ] 127.0.0.1 GET /admin/procurement?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020988s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.090228s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.048148s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003358s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'procurement' LIMIT 1 [ RunTime:0.016785s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:15+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005626s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.092130s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001968s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.054730s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.027505s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `fa_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.002207s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:23+08:00 ] 127.0.0.1 GET /admin/procurement/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114459339
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005099s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:1.219689s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002119s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.043938s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003544s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.046367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_procurement` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.001535s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002246s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:31+08:00 ] 127.0.0.1 POST /admin/ajax/upload
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024739s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_attachment` [ RunTime:0.061556s ]
+[ sql ] [ SQL ] INSERT INTO `fa_attachment` (`admin_id` , `filesize` , `imagetype` , `mimetype` , `url` , `uploadtime` , `storage` , `sha1` , `createtime` , `updatetime`) VALUES (1 , 14772 , 'xlsx' , 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' , '/uploads/20181021/2e4bfcf20b4ec2628691d7fd735c2fb7.xlsx' , 1540114470 , 'local' , '2b2d884f4851c71e33118a637498b32668bf04a8' , 1540114470 , 1540114470) [ RunTime:0.050517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.077369s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"name\":\"\\u91c7\\u8d2d\\u660e\\u7ec6(2).xlsx\"}' , '/admin/ajax/upload' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114471) [ RunTime:0.053132s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:34+08:00 ] 127.0.0.1 POST /admin/procurement/import
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014616s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.047464s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.051113s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003007s ]
+[ sql ] [ SQL ] SELECT COLUMN_NAME,COLUMN_COMMENT FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'fa_procurement' AND TABLE_SCHEMA = 'anglibiz' [ RunTime:0.055509s ]
+[ sql ] [ SQL ] 'anglibiz'fa_procurement'HOW COLUMNS FROM `fa_procurement` [ RunTime:0.053246s ]
+[ sql ] [ SQL ] INSERT INTO `fa_procurement` (`sales_person` , `factory_name` , `factory_mobile` , `product_name` , `product_number` , `cost_unit_price` , `cost_mount` , `advance_payment` , `balance_mount` , `delivery_date` , `customer_name` , `sales_unit_price` , `sales_amount` , `rebate_amount` , `order_person` , `remark` , `link`) VALUES ('于颖' , '东莞市好心艺家居饰品有限公司' , '15014820917' , '好心艺纸巾盒' , 20 , 80 , 1290 , 0 , 1290 , '43360' , '万科西宸之光' , 95 , 1900 , 0 , '孙继伟' , '' , 'baidu.com') [ RunTime:0.142785s ]
+[ sql ] [ SQL ] INSERT INTO `fa_procurement` (`sales_person` , `factory_name` , `factory_mobile` , `product_name` , `product_number` , `cost_unit_price` , `cost_mount` , `advance_payment` , `balance_mount` , `delivery_date` , `customer_name` , `sales_unit_price` , `sales_amount` , `rebate_amount` , `order_person` , `remark` , `link`) VALUES ('王军' , '临沂市兰山区木易电器销售中心' , '18596381551' , '巧克力饼干' , 5 , 70 , 895 , 0 , 895 , '43361' , '哈西红星' , 280 , 1400 , 0 , '孙继伟' , '' , 'bing.com') [ RunTime:0.004427s ]
+[ sql ] [ SQL ] INSERT INTO `fa_procurement` (`sales_person` , `factory_name` , `factory_mobile` , `product_name` , `product_number` , `cost_unit_price` , `cost_mount` , `advance_payment` , `balance_mount` , `delivery_date` , `customer_name` , `sales_unit_price` , `sales_amount` , `rebate_amount` , `order_person` , `remark` , `link`) VALUES ('于颖' , '东莞市好心艺家居饰品有限公司' , '15014820917' , '好心艺纸巾盒' , 20 , 50 , 1290 , 0 , 1290 , '43360' , '万科西宸之光' , 95 , 1900 , 0 , '孙继伟' , '' , 'baidu.com') [ RunTime:0.003959s ]
+[ sql ] [ SQL ] INSERT INTO `fa_procurement` (`sales_person` , `factory_name` , `factory_mobile` , `product_name` , `product_number` , `cost_unit_price` , `cost_mount` , `advance_payment` , `balance_mount` , `delivery_date` , `customer_name` , `sales_unit_price` , `sales_amount` , `rebate_amount` , `order_person` , `remark` , `link`) VALUES ('刘杨' , '临沂市兰山区木易电器销售中心' , '18596381551' , '电冰箱' , 5 , 90 , 895 , 0 , 895 , '43361' , '哈西红星' , 280 , 1400 , 0 , '孙继伟' , '' , 'bing.com') [ RunTime:0.004200s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.052937s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"file\":\"\\/uploads\\/20181021\\/2e4bfcf20b4ec2628691d7fd735c2fb7.xlsx\"}' , '/admin/procurement/import' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114474) [ RunTime:0.047091s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:35+08:00 ] 127.0.0.1 GET /admin/procurement/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114459340
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009977s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.050340s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002927s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.045257s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.040778s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_procurement` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.002462s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002860s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:42+08:00 ] 127.0.0.1 POST /admin/procurement/del/ids/23,22
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010391s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.054195s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.063856s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.003330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.054867s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` WHERE  `id` IN (23,22) [ RunTime:0.002672s ]
+[ sql ] [ SQL ] DELETE FROM `fa_procurement`    WHERE  `id` = 22 [ RunTime:0.069818s ]
+[ sql ] [ SQL ] DELETE FROM `fa_procurement`    WHERE  `id` = 23 [ RunTime:0.061331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_admin_log` [ RunTime:0.043232s ]
+[ sql ] [ SQL ] INSERT INTO `fa_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"del\",\"ids\":\"23,22\",\"params\":\"\"}' , '/admin/procurement/del/ids/23,22' , 1 , 'admin' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1540114482) [ RunTime:0.039674s ]
+---------------------------------------------------------------
+[ 2018-10-21T17:34:45+08:00 ] 127.0.0.1 GET /admin/procurement/index?sort=id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1540114459341
+[ sql ] [ DB ] CONNECT:[ UseTime:0.036629s ] mysql:host=127.0.0.1;dbname=anglibiz;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_group_access` [ RunTime:0.102602s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `fa_auth_group_access` `aga` LEFT JOIN `fa_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.007185s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_auth_rule` [ RunTime:0.054145s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `fa_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.008088s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `fa_procurement` [ RunTime:0.071205s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `fa_procurement` ORDER BY `id` DESC LIMIT 1 [ RunTime:0.009153s ]
+[ sql ] [ SQL ] SELECT * FROM `fa_procurement` ORDER BY `id` DESC LIMIT 0,10 [ RunTime:0.002769s ]
