@@ -135,6 +135,10 @@ class Procurement extends Backend
             if ($this->request->request('keyField')) {
                 return $this->selectpage();
             }
+
+
+            $admin_user=Session::get('admin');
+            $show_type=$this->model->getListLevel($admin_user['id']);
             list($where, $sort, $order, $offset, $limit) = $this->buildparams();
             $total = $this->model
                 ->where($where)

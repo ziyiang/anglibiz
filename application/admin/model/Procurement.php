@@ -34,6 +34,17 @@ class Procurement extends Model
 
     }
     
+    public function getListLevel($uid)
+    {
+        $data= Db::table('fa_auth_group_access')->alias('access')
+            ->join(["fa_auth_group" => "my_group"], "access.group_id=my_group.id")
+            ->field("my_group.id")
+            ->where(array('access.uid'=>$uid))
+            ->find();
+//        $data
+        return ($data['id']==7)?'show_part':'show_all';
+    }
+
 
     
 
