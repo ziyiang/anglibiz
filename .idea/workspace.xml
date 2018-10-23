@@ -3,29 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ac9708f3-125d-4f64-8239-fece78a69ec3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application/admin/controller/Procurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/controller/Procurement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/application/admin/model/Procurement.php" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/model/Procurement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/procurement/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/procurement/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application/admin/view/procurement/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/application/admin/view/procurement/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/assets/js/backend/procurement.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/js/backend/procurement.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/4e/819c837d54a6ed09abc77a8560a66f.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/cache/cb/78ef4a9130f39208ff10858ddd8377.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/log/201810/22.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/0c28cb1259290ae764568e41ae1e667d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/0e01d11fa3d42d8f384bfbaff4691a62.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/0fc8d377e24503c103900a7c5f538484.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/52bf12c58aa2c9dad76b5ab85310396b.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/6305a4471895d6fa9e358582c30b966a.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/73d6e244056c3e6ed0cca14d6638ec39.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/757b6b72bb5a7171b72bf5eeaa696517.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/7e9ce209f11d88da745066f62716a0ff.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/8ef0f24ffdf337e7916db935c90b4b8d.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/9035c1a7de2c705a2b22945f14cd0ffa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/a1448805cd836a872b2c856b8bdcd009.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/b1f6e76a5da5cbbae446063230e1a6f4.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d05c424ab355f3779ca5a2a8212fe322.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/d661cc1f5ea0b4a46ebc88b59471d37c.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/dc00137a13dba5a916bde90f9eccec23.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/temp/df3b89ec316f2c9d967dd1e1d5b0c1ea.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,35 +33,35 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="4" />
-          <entry key="js" value="7" />
+          <entry key="js" value="8" />
           <entry key="lock" value="1" />
-          <entry key="log" value="9" />
-          <entry key="php" value="122" />
+          <entry key="log" value="11" />
+          <entry key="php" value="123" />
           <entry key="sql" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="7" />
-          <entry key="PHP" value="122" />
-          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="JavaScript" value="8" />
+          <entry key="PHP" value="123" />
+          <entry key="PLAIN_TEXT" value="12" />
           <entry key="SQL" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="html" value="4" />
-          <entry key="js" value="29" />
+          <entry key="js" value="34" />
           <entry key="lock" value="1" />
-          <entry key="php" value="579" />
+          <entry key="php" value="584" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="4" />
-          <entry key="JavaScript" value="29" />
-          <entry key="PHP" value="579" />
+          <entry key="JavaScript" value="34" />
+          <entry key="PHP" value="584" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -87,18 +69,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/controller/Procurement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-              <folding>
-                <element signature="e#40#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Error.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,22 +79,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/application/admin/model/Procurement.php">
+        <entry file="file://$PROJECT_DIR$/application/admin/controller/Procurement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-              <folding>
-                <element signature="e#35#51#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="253">
+              <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/application/admin/model/Procurement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="715">
+              <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/common/controller/Backend.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="239" column="5" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
+            <state relative-caret-position="198">
+              <caret line="245" column="16" selection-start-line="245" selection-start-column="16" selection-end-line="245" selection-end-column="16" />
               <folding>
                 <element signature="e#41#68#0#PHP" expanded="true" />
               </folding>
@@ -144,8 +120,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/assets/js/backend/procurement.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="23">
+              <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -153,8 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="23">
+              <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -163,8 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cac</find>
-      <find>Author_id</find>
       <find>fa_admin</find>
       <find>commonsearch-table hidden</find>
       <find>销售日期</find>
@@ -191,6 +165,8 @@
       <find>_WARNING</find>
       <find>error_reporting</find>
       <find>Procurement_id</find>
+      <find>上传人</find>
+      <find>index?sort=</find>
       <find>procurement_id</find>
       <find>sort</find>
     </findStrings>
@@ -207,11 +183,11 @@
         <option value="$PROJECT_DIR$/application/index/lang/zh-cn.php" />
         <option value="$PROJECT_DIR$/application/admin/view/common/menu.html" />
         <option value="$PROJECT_DIR$/runtime/log/201810/22.log" />
-        <option value="$PROJECT_DIR$/runtime/log/201810/23.log" />
-        <option value="$PROJECT_DIR$/public/assets/js/backend/procurement.js" />
-        <option value="$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php" />
-        <option value="$PROJECT_DIR$/application/admin/model/Procurement.php" />
         <option value="$PROJECT_DIR$/application/admin/controller/Procurement.php" />
+        <option value="$PROJECT_DIR$/runtime/log/201810/23.log" />
+        <option value="$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php" />
+        <option value="$PROJECT_DIR$/public/assets/js/backend/procurement.js" />
+        <option value="$PROJECT_DIR$/application/admin/model/Procurement.php" />
       </list>
     </option>
   </component>
@@ -278,8 +254,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="215" />
-    <option name="y" value="312" />
+    <option name="x" value="546" />
+    <option name="y" value="89" />
     <option name="width" value="697" />
     <option name="height" value="735" />
   </component>
@@ -326,6 +302,12 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\anglibiz\public\assets\js\backend" />
+      <recent name="D:\xampp\htdocs\anglibiz\application\admin\controller" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -351,19 +333,19 @@
       <workItem from="1540112100647" duration="5973000" />
       <workItem from="1540161899853" duration="18534000" />
       <workItem from="1540261265938" duration="57000" />
-      <workItem from="1540300228287" duration="6436000" />
+      <workItem from="1540300228287" duration="7861000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31000000" />
+    <option name="totallyTimeSpent" value="32425000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" weight="0.24961832" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24961832" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -371,9 +353,9 @@
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.46258503" />
+      <window_info anchor="bottom" id="Find" order="6" weight="0.43367347" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.34863946" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.34863946" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -384,7 +366,7 @@
     </layout>
     <layout-to-restore>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.24961832" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.24961832" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="1" show_stripe_button="false" />
@@ -394,7 +376,7 @@
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" weight="0.46258503" />
       <window_info anchor="bottom" id="Run" order="7" />
-      <window_info active="true" anchor="bottom" id="Debug" order="8" visible="true" weight="0.34863946" />
+      <window_info anchor="bottom" id="Debug" order="8" visible="true" weight="0.34863946" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="11" />
@@ -409,25 +391,6 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/admin/controller/Procurement.php</url>
-          <line>147</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/application/admin/controller/Procurement.php</url>
-          <line>142</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-      </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-    </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -703,27 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/log/201810/23.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="83" column="92" lean-forward="true" selection-start-line="83" selection-start-column="92" selection-end-line="83" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/procurement.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="6" column="32" lean-forward="true" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/thinkphp/library/think/Error.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -731,33 +673,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/application/common/controller/Backend.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="245" column="16" selection-start-line="245" selection-start-column="16" selection-end-line="245" selection-end-column="16" />
+          <folding>
+            <element signature="e#41#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/runtime/log/201810/23.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/application/admin/lang/zh-cn/procurement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/js/backend/procurement.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/controller/Procurement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="140" column="23" selection-start-line="140" selection-start-column="23" selection-end-line="140" selection-end-column="23" />
-          <folding>
-            <element signature="e#40#74#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="253">
+          <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/application/admin/model/Procurement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="44" column="53" selection-start-line="44" selection-start-column="53" selection-end-line="44" selection-end-column="53" />
-          <folding>
-            <element signature="e#35#51#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/application/common/controller/Backend.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="239" column="5" selection-start-line="239" selection-start-column="5" selection-end-line="239" selection-end-column="5" />
-          <folding>
-            <element signature="e#41#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="715">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
         </state>
       </provider>
     </entry>

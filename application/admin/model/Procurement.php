@@ -21,7 +21,6 @@ class Procurement extends Model
     protected $append = [
 
     ];
-
     public function getList($where,$sort,$order,$offset, $limit)
     {
         return Db::table('fa_procurement')->alias('fpo')
@@ -33,7 +32,7 @@ class Procurement extends Model
             ->select();
 
     }
-    
+
     public function getListLevel($uid)
     {
         $data= Db::table('fa_auth_group_access')->alias('access')
@@ -44,7 +43,6 @@ class Procurement extends Model
 //        $data
         return ($data['id']==7)?'show_part':'show_all';
     }
-
 
     
 

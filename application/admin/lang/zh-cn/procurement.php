@@ -1,9 +1,8 @@
 <?php
 
 return [
-    'Procurement_id'  =>  '序号',
-    'Author_id'  =>  '上传人ID',
-    'Nickname'  =>  '上传人',
+    'Id'  =>  ' 序号',
+    'Author_id'  =>  '上传人',
     'Purchase_date'  =>  '销售日期',
     'Sales_person'  =>  '销售人',
     'Factory_name'  =>  '厂名',

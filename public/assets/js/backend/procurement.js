@@ -20,12 +20,12 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
             // 初始化表格
             table.bootstrapTable({
                 url: $.fn.bootstrapTable.defaults.extend.index_url,
-                pk: 'procurement_id',
-                sortName: 'procurement_id',
+                pk: 'id',
+                sortName: 'id',
                 columns: [
                     [
                         {checkbox: true},
-                        {field: 'procurement_id', title: __('Procurement_id')},
+                        {field: 'id', title: __('Id')},
                         {field: 'author_id', title: __('Author_id')},
                         {field: 'nickname', title: __('Nickname')},
                         {field: 'purchase_date', title: __('Purchase_date'), operate:'RANGE', addclass:'datetimerange'},
