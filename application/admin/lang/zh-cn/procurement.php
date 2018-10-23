@@ -2,11 +2,12 @@
 
 return [
     'Id'  =>  '主键',
-    'Atuhor_id'  =>  '上传人',
+    'Author_id'  =>  '上传人ID',
+    'Nickname'  =>  '上传人',
     'Purchase_date'  =>  '销售日期',
     'Sales_person'  =>  '销售人',
-    'Sales_mobile'  =>  '销售人联系电话',
     'Factory_name'  =>  '厂名',
+    'Sales_mobile'  =>  '联系人',
     'Factory_mobile'  =>  '联系电话',
     'Product_name'  =>  '品名',
     'Product_number'  =>  '数量',

@@ -3,6 +3,7 @@
 namespace app\admin\model;
 
 use think\Model;
+use think\Db;
 
 class Procurement extends Model
 {
@@ -20,6 +21,18 @@ class Procurement extends Model
     protected $append = [
 
     ];
+
+    public function getList($where,$sort,$order,$offset, $limit)
+    {
+        return Db::table('fa_procurement')->alias('fpo')
+            ->join(["fa_admin" => "admin"], "fpo.author_id=admin.id")
+            ->field("fpo.*,admin.nickname")
+            ->where($where)
+            ->order($sort, $order)
+            ->limit($offset, $limit)
+            ->select();
+
+    }
     
 
     
