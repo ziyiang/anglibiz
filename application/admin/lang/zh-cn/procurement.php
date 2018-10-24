@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'Id'  =>  ' 序号',
+    'Procurement_id'  =>  ' 序号',
     'Author_id'  =>  '上传人',
     'Purchase_date'  =>  '销售日期',
     'Sales_person'  =>  '销售人',

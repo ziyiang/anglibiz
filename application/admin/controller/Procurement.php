@@ -11,6 +11,8 @@ use think\Session;
  */
 class Procurement extends Backend
 {
+
+    public $searchFields = 'procurement_id';
     
     /**
      * Procurement模型对象
@@ -139,11 +141,14 @@ class Procurement extends Backend
 
             $admin_user=Session::get('admin');
             $show_type=$this->model->getListLevel($admin_user['id']);
-            list($where, $sort, $order, $offset, $limit) = $this->buildparams();
-            $total = $this->model
-                ->where($where)
-                ->order($sort, $order)
-                ->count();
+            list($where, $sort, $order, $offset, $limit) = $this->buildparams('fpo.id');
+
+
+            $total = $list=$this->model->getListNumber($where,$sort,$order);
+//            $total = $this->model->alias('fpo')
+//                ->where($where)
+//                ->order($sort, $order)
+//                ->count();
 
             $list=$this->model->getList($where,$sort,$order,$offset, $limit);
 

@@ -11,10 +11,10 @@ class Procurement extends Model
     protected $name = 'procurement';
     
     // 自动写入时间戳字段
-    protected $autoWriteTimestamp = false;
+    protected $autoWriteTimestamp = true;
 
     // 定义时间戳字段名
-    protected $createTime = false;
+    protected $createTime = true;
     protected $updateTime = false;
     
     // 追加属性
@@ -30,6 +30,16 @@ class Procurement extends Model
             ->order($sort, $order)
             ->limit($offset, $limit)
             ->select();
+
+    }
+    public function getListNumber($where,$sort,$order)
+    {
+        return Db::table('fa_procurement')->alias('fpo')
+            ->join(["fa_admin" => "admin"], "fpo.author_id=admin.id")
+            ->field("fpo.*,admin.nickname")
+            ->where($where)
+            ->order($sort, $order)
+            ->count();
 
     }
 
