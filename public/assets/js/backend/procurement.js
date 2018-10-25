@@ -27,7 +27,7 @@ define(['jquery', 'bootstrap', 'backend', 'table', 'form'], function ($, undefin
                         {checkbox: true},
                         {field: 'procurement_id', title: __('Procurement_id')},
                         {field: 'author_id', title: __('Author_id')},
-                        {field: 'nickname', title: __('Nickname')},
+                        {field: 'nickname', title: __('Nickname'),operate:'LIKE'},
                         {field: 'purchase_date', title: __('Purchase_date'), operate:'RANGE', addclass:'datetimerange'},
                         {field: 'sales_person', title: __('Sales_person')},
                         {field: 'factory_name', title: __('Factory_name')},
